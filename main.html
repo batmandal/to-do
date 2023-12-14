@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/8279c67227.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <input type="search" placeholder="search" name="" id="search" />
+    <div class="clicked"></div>
+    <div class="container">
+      <div class="board">
+        <div class="board_title">
+          <h2>To do</h2>
+          <p class="counter"></p>
+        </div>
+
+        <div class="cards"></div>
+
+        <button id="add-btn">+ add card</button>
+      </div>
+      <div class="board">
+        <div class="board_title">
+          <h2>In progress</h2>
+          <p class="counter"></p>
+        </div>
+
+        <div class="cards"></div>
+        <button id="add-btn">+ add card</button>
+      </div>
+      <div class="board">
+        <div class="board_title">
+          <h2>Stuck</h2>
+          <p class="counter"></p>
+        </div>
+
+        <div class="cards"></div>
+        <button id="add-btn">+ add card</button>
+      </div>
+      <div class="board">
+        <div class="board_title">
+          <h2 class="done">Done</h2>
+          <p class="counter"></p>
+        </div>
+
+        <div class="cards"></div>
+        <button id="add-btn">+ add card</button>
+      </div>
+    </div>
+    <div class="modal">
+      <form>
+        <div class="bottom">
+          <h2>Add Task</h2>
+          <div class="exitaddtask"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <div>
+          <h4 id="firsttitle">Title</h4>
+          <input type="text" name="" id="title" required />
+        </div>
+        <div>
+          <h4>Description</h4>
+          <textarea type="text" name="" id="desc" required></textarea>
+        </div>
+        <div>
+          <h4>Status</h4>
+          <select id="browsers" name="status">
+            <option value="To do">To do</option>
+            <option value="In progress">In progress</option>
+            <option value="Stuck">Stuck</option>
+            <option value="Done">Done</option>
+          </select>
+        </div>
+        <div>
+          <h4>Priority</h4>
+          <select id="browsers1" name="priority">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+          </select>
+        </div>
+        <div class="createadd flex">
+          <button type="submit">Add task</button>
+        </div>
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
